@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetech Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="img/ft.svg" alt="Logo do Meu Blog Tech" class="header-logo">
+</header>
+
+<script>
+        // Seleciona a imagem pela classe
+        const imagemLogo = document.querySelector('.header-logo');
+
+        // Adiciona um evento que escuta o clique do botão direito
+        imagemLogo.addEventListener('contextmenu', function(evento) {
+            // Impede que o menu de contexto (Salvar, Copiar) apareça
+            evento.preventDefault();
+            // (Opcional) Mostra um alerta amigável
+            // alert("Cópia de imagem não permitida."); 
+        });
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Games</a></li>
+        </ul>
+    </nav>
+
+ <div class="container">
+        <div class="post">
+            <img src="https://i.postimg.cc/9Q8539Rr/IPhone-16e.jpg" alt="Imagem do post">
+            <h2>Título do Post 1</h2>
+            <p>Pequena descrição do post para dar uma prévia do conteúdo.</p>
+            <a href="iphone-16e-review.html">Leia mais</a>
+        </div>
+
+            <article class="post">
+                <img src="https://via.placeholder.com/600x300" alt="Imagem do Post">
+                <h2>Como criar seu próprio blog do zero</h2>
+                <p>Aprenda os passos fundamentais para estruturar seu site com HTML e CSS...</p>
+                <a href="#" class="read-more">Ler mais</a>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Sobre Mim</h3>
+                <p>Apaixonado por tecnologia e programação.</p>
+            </div>
+            <div class="widget">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">I.A</a></li>
+                    <li><a href="#">Impressão 3d</a></li>
+                    <li><a href="#">Hackintosh</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Games</a></li>
+
+                    <li><a href="#">Novas Tendencias Tech</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FeTech Lab - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

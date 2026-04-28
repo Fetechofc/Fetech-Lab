@@ -1,0 +1,158 @@
+/* Configurações Globais */
+
+
+.header-logo {
+    width: 60%;       /* Ou o tamanho que você desejar, ex: 300px */
+    max-width: 800px; /* Limita o tamanho em telas grandes */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+}
+
+header h1 span {
+    color: #007bff;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.content {
+    flex: 3; /* Ocupa 3/4 do espaço */
+}
+
+.sidebar {
+    flex: 1; /* Ocupa 1/4 do espaço */
+}
+
+/* Estilo dos Posts */
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post h2 {
+    margin: 15px 0;
+    color: #222;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo da Sidebar */
+.widget {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.widget h3 {
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Responsividade (Para Celular) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+/* 1. Ajuste Geral do Texto */
+body {
+    background-color: #0b0b0b;
+    /* Aqui forçamos todo texto que não tiver cor definida a ser cinza claro */
+    color: #e0e0e0; 
+}
+
+/* 2. Ajuste do Cabeçalho (Topo) */
+header {
+    /* Mudamos de branco para preto ou transparente */
+    background-color: #000000; 
+    border-bottom: 2px solid #333; /* Uma linha sutil em vez do azul forte */
+    padding: 20px 0;
+}
+
+/* 3. Ajuste dos Títulos e Parágrafos dos Posts */
+.post h2, .widget h3 {
+    color: #000000; /* Títulos em branco puro para destaque */
+}
+
+.post p {
+    color: #000000; /* Texto dos posts em cinza claro para não cansar a vista */
+}
+
+/* 4. Ajuste dos Links */
+a {
+    color: #4da3ff; /* Um azul mais claro para destacar no fundo preto */
+}
